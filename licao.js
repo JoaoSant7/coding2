@@ -39,3 +39,25 @@ var percentualdesconto = (50);
 var valorfinal = valorfinal = valor - ( valor * (percentualdesconto / 100));
 console.log (`"O valor final do desconto é" ${valorfinal}$`);/*/
 
+function calcularImpostoDeRenda(rendaAnual) {
+    let imposto = 0;
+
+    if (rendaAnual <= 22847.76) {
+        imposto = 0; // Isento
+    } else if (rendaAnual <= 33919.80) {
+        imposto = (rendaAnual * 0.075) - 1713.58;
+    } else if (rendaAnual <= 45012.60) {
+        imposto = (rendaAnual * 0.15) - 4257.57;
+    } else if (rendaAnual <= 55976.16) {
+        imposto = (rendaAnual * 0.225) - 7633.51;
+    } else {
+        imposto = (rendaAnual * 0.275) - 10432.32;
+    }
+
+    return imposto > 0 ? imposto : 0;
+}
+
+const renda = 100000;
+const impostoDevido = calcularImpostoDeRenda(renda);
+console.log(`Imposto de Renda a pagar: R$ ${impostoDevido.toFixed(2)}`);
+
