@@ -5,7 +5,7 @@ console.log(livros[0] [2]); //Este código encontra o livro (elemento) a partir 
 
 //Segundo colchete pesquisa pela letra do elemento selecionado, considerando o index (posição) da letra
 
-let consulta = livros.indexOf("Javascript Assertivo")
+let consulta = livros.indexOf("Castelo Interior")
 console.log(consulta) //Este código encontra o index (posição) a partir do livro (elemento)
 
 
