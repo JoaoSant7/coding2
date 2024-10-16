@@ -26,3 +26,25 @@ INSERT INTO users (username, password) VALUES ('user2', '321');
 
 -- COMO ATUALIZAR DADOS
 UPDATE users SET PASSWORD = 'newpass' WHERE USERNAME = 'user1';
+
+-- COMO APAGAR DADOS
+DELETE FROM users WHERE username = 'user1';
+
+-- TIPOS BÁSICOS DE DADOS
+--INT: Intefer Values
+--VARCHAR(n): Variable-length string with a max length of n
+--TEXT: Long text data
+--TIMESTAMP: Date ant time
+
+-- IMPROVE QUERY PERFORMANCE WITH INDEXES
+CREATE INDEX idx_username ON users (username);
+
+--INNER JOIN
+SELECT * FROM users
+INNER JOIN orders ON users.id = orders.user_id;
+
+--LEFT JOIN
+SELECT * FROM users
+LEFT JOIN orders ON users.id = orders.user_id;
+
+-- BACKUP
