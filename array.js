@@ -14,7 +14,13 @@ console.log(livros.pop()); //remove o último elemento e mostra o elemento remov
 
 console.log(livros.push("Confissões")); //adiciona elementos no final da array e mosta a quantidade do array
 
-console.log(livros); //mostra todos os elementos do const, neste caso, os livros
+console.log(livros);
+
+let inserir = prompt("Digite o livro para inserir:")
+
+console.log(livros.push (inserir))
+console.log(livros)
 
 //Elementos: valores que ficam agrupados dentro do array
 //Cada elemento da array está em uma posição; esta posição é o INDEX -> 0, 1, 2, 3 ...
+
