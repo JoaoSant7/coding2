@@ -8,6 +8,8 @@ console.log(livros[0] [2]); //Este código encontra o livro (elemento) a partir 
 let consulta = livros.indexOf("Castelo Interior")
 console.log(consulta) //Este código encontra o index (posição) a partir do livro (elemento)
 
+console.log(livros[1][1]); //Outra forma de pesquisar pela letra do elemento a partir do index
+
 
 
 //Elementos: valores que ficam agrupados dentro do array
