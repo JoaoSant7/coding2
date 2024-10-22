@@ -7,7 +7,8 @@ switch (fruit) {
     case 'orange':
         console.log('Orange selected');
         break;
-    default:
+    default: //Default serve para casos onde não há correspondente
+    
         console.log('No fruit selected');
         break;
 }
