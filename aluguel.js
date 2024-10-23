@@ -1,32 +1,38 @@
 const carros = ["Palio", "Jetta", "Marea", "Onix"];
 
-console.log(carros.push("Uno")); //ADICIONA CARRO NOVO À LISTA
+carros.push("Uno");
+//ADICIONA CARRO NOVO À LISTA
 
-let array = ["Palio", "Jetta", "Marea", "Onix", "Uno"];
-carros.splice(3, 1); //Escolhe qual elemento remover da Array
+console.log(carros); // MOSTRA LISTA DE CARROS APÓS A ADIÇÃO
 
-console.log(carros);//MOSTRA A LISTA DE CARROS
+carros.splice(carros.indexOf("Onix"), 1);
+//REMOVE O CARRO DE ACORDO COM O INDEX (POSIÇÃO)
 
-console.log(carros.length);//MOSTRA O NÚMERO TOTAL DE CARROS NA LISTA
+console.log(carros);
+//MOSTRA À LISTA DE CARROS APÓS A REMOÇÃO
 
-let nome = prompt ("Bom dia! Qual o seu nome?")
-let pesquisa = prompt (`Qual o carro que você deseja alugar? Temos as seguintes opções: Palio, Jetta, Marea ou Uno`)//ATENDIMENTO AO CLIENTE
+console.log(carros.length);
+//MOSTRA O NÚMERO TOTAL DE CARROS DA LISTA
+
+let nome = prompt("Bom dia! Qual o seu nome?");
+let pesquisa = prompt(`Qual o carro que você deseja alugar? Temos as seguintes opções: ${carros.join(", ")}`);
+//JOIN TRANSFORMA A ARRAY DE CARROS EM STRING
+//LISTA DE OPÇÕES ATUALIZADA
 
 switch (pesquisa) {
   case "Palio":
-    console.log(`Caro ${nome}, o Palio está por 75 reais por dia!`)
+    console.log(`Caro ${nome}, o aluguel do Palio está por 75 reais por dia!`);
     break;
-    case "Jetta":
-    console.log(`Caro ${nome}, o Jetta está por 100 reais a diária.`)
+  case "Jetta":
+    console.log(`Caro ${nome}, o aluguel do Jetta está por 100 reais a diária.`);
     break;
   case "Marea":
-    console.log(`Caro ${nome}, o Marea está por 40 reais por dia!`)
+    console.log(`Caro ${nome}, o aluguel do Marea está por 40 reais por dia!`);
     break;
   case "Uno":
-    console.log(`Caro ${nome}, o Uno está por 80 reais a diária.`)
+    console.log(`Caro ${nome}, o aluguel do Uno está por 80 reais a diária.`);
     break;
   default:
-    console.log(`Caro ${nome}, não possuímos este modelo de veículo para aluguel.`)
-    break;
+    console.log(`Caro ${nome}, não possuímos este modelo de veículo para aluguel.`);
 }
-//OPÇÕES DE CARROS
+
