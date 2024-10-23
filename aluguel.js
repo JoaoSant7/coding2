@@ -14,8 +14,8 @@ console.log(carros);
 console.log(carros.length);
 //MOSTRA O NÚMERO TOTAL DE CARROS DA LISTA
 
-let nome = prompt("Bom dia! Qual o seu nome?");
-let pesquisa = prompt(`Olá, ${nome}! Qual o carro que você deseja alugar? Temos as seguintes opções: ${carros.join(", ")}`);
+let nome = prompt("Olá,bem vindo à Alu Veículos! Qual o seu nome?");
+let pesquisa = prompt(`Fico feliz em poder ajuda-lo, ${nome}! Qual o carro que você deseja alugar? Temos as seguintes opções: ${carros.join(", ")}`);
 //JOIN TRANSFORMA A ARRAY DE CARROS EM STRING
 //LISTA DE OPÇÕES ATUALIZADA
 
